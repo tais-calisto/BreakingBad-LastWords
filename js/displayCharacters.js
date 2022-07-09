@@ -11,6 +11,7 @@ const displayCharacters = async() =>{
         const {death: name} = char;
         const {last_words : lw} = char;
         const {responsible: rd} = char;
+        const { cause: cd } = char;
 
         return `
         <article class="character">
@@ -27,6 +28,7 @@ const displayCharacters = async() =>{
           </div>
           <div class="char-info">
             <p>Last Words: <span>${lw}</span></p>
+            <p>Cause of death: <span>${cd}</span></p>
             <p>Responsable for the death: <span>${rd}</span></p>
           </div>
         </article>
